@@ -1,0 +1,29 @@
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 995px) {
+ body{min-width:768px;}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.resp-toggle-btn { display: inline-block; border: none; cursor: pointer; outline: none; width: 50px; height: 40px; position: relative; top: 8px; right: 12px; position: absolute; background: none;}
+	  
+	.resp-toggle-btn span { display: block; position: absolute; height: 2px; left: 8px; right: 8px; background-color: #fff; -webkit-transition: all 0.25s ease; -moz-transition: all 0.25s ease; -o-transition: all 0.25s ease; transition: all 0.25s ease; }
+	.resp-toggle-btn span.line1 { top: 11px; }
+	.resp-toggle-btn span.line2 { top: 19px; }
+	.menu > .hasUl > a::after { right: 22px; }
+	.resp-toggle-btn span.line3 { top: 27px; }
+	.navTrue .resp-toggle-btn span { left: 6px; right: 6px; }
+	.navTrue .resp-toggle-btn span.line1 { -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 19px; }
+	.navTrue .resp-toggle-btn span.line2 { opacity: 0; }
+	.navTrue .resp-toggle-btn span.line3 { -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); top: 19px; }
+	.menu { position: fixed; left: 100%; top: 55px; width: 300px; height: 100%; z-index: 999; padding: 0; overflow: auto; background-color: #131c35; -webkit-transition: all 350ms ease; -moz-transition: all 350ms ease; -ms-transition: all 350ms ease; -o-transition: all 350ms ease; transition: all 350ms ease; }
+	.navTrue .menu { left: calc(100% - 300px); }
+	.menu li { float: none; display: block; line-height: 40px; padding: 0 20px; margin: 0; text-align: left; border-top: 1px solid rgba(255, 255, 255, 0.3); }
+	.menu a { display: block; padding: 10px 20px; color: #fff; font-size: 16px; }
+	.nav_overlay { position: fixed; opacity: 0; visibility: hidden; top: 0; left: 0; width: 100%; height: 100%; z-index: 888; color: #fff; background-color: #000; -webkit-transition: all 350ms ease; -moz-transition: all 350ms ease; -ms-transition: all 350ms ease; -o-transition: all 350ms ease; transition: all 350ms ease; }
+	.navTrue .nav_overlay { opacity: .7; visibility: visible; }
+}
+
+@media only screen and (max-width: 479px) {
+ body{min-width:300px;}
+}
